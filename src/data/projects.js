@@ -26,7 +26,7 @@ export const projects = [
       en: "Floor-to-ceiling glass was preserved and framed with custom bronze fixtures. Natural Ethiopian onyx was featured as statement walls, while bespoke furniture was crafted to complement the panoramic views.",
       am: "ከወለል እስከ ጣሪያ ያለው መስተዋት ተጠብቆ በብጁ የነሐስ ማስጌጫዎች ተቀርጿል። የኢትዮጵያ ናቼ ድንጋይ እንደ ዋና ግድግዳዎች ተደርጓል፣ ብጁ ቤት ውስጥ ዕቃዎች ሰፊ እይታዎችን ለማሟላት ተሰሩ።",
     },
-    walkthroughUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    walkthroughUrl: "https://videos.pexels.com/video-files/6032338/6032338-uhd_2560_1440_30fps.mp4",
   },
   {
     id: "kazanchis-hq",
@@ -55,7 +55,7 @@ export const projects = [
       en: "Each floor was given a distinct identity while maintaining brand coherence. The lobby features a 6-meter art installation inspired by traditional weaving patterns.",
       am: "እያንዳንዱ ፎቅ የብራንድ ተመጣጣኝነትን እየጠበቀ ልዩ ማንነት ተሰጠው። ሎቢው በባህላዊ ሽመና ቅጦች የተመሰረተ 6 ሜትር የኪነ ጥበብ ማሳያ ያሳያል።",
     },
-    walkthroughUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    walkthroughUrl: "https://videos.pexels.com/video-files/6032338/6032338-uhd_2560_1440_30fps.mp4",
   },
   {
     id: "kuriftu-villa",
@@ -84,7 +84,7 @@ export const projects = [
       en: "Retractable glass walls blur the boundary between inside and out. Local volcanic stone, reclaimed timber, and handwoven textiles ground the design in its environment.",
       am: "ተመልሶ የሚገባ መስታወት ግድግዳዎች በውስጥ እና በውጭ መካከል ያለውን ድንበር ያደበዝዛሉ። የአካባቢ እሳተ ገሞራ ድንጋይ፣ ተደጋግሞ ጥቅም ላይ የዋለ እንጨት እና የእጅ ሽመና ጨርቆች ዲዛይኑን በአካባቢው ውስጥ ያረጋጉታል።",
     },
-    walkthroughUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    walkthroughUrl: "https://videos.pexels.com/video-files/6032338/6032338-uhd_2560_1440_30fps.mp4",
   },
   {
     id: "lagare-suite",
@@ -113,7 +113,7 @@ export const projects = [
       en: "Hand-finished walnut paneling, integrated smart lighting, and acoustically engineered meeting rooms create an environment that commands respect while enabling modern workflows.",
       am: "በእጅ የተጠናቀቀ ዋልናት ፓነል፣ የተቀናጀ ብልጥ መብራት እና በድምፅ ምህንድስና የተሰሩ የስብሰባ ክፍሎች ዘመናዊ የስራ ፍሰቶችን እያንቀሳቀሱ ክብርን የሚያዝ አካባቢ ይፈጥራሉ።",
     },
-    walkthroughUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    walkthroughUrl: "https://videos.pexels.com/video-files/6032338/6032338-uhd_2560_1440_30fps.mp4",
   },
   {
     id: "oldairport-villa",
@@ -142,7 +142,7 @@ export const projects = [
       en: "Structural walls were opened to create flowing sightlines. A central gallery hallway connects the living spaces, flanked by curated art and custom lighting sculptures.",
       am: "የሚፈሱ የእይታ መስመሮችን ለመፍጠር መዋቅራዊ ግድግዳዎች ተከፈቱ። ማዕከላዊ ጋለሪ መተላለፊያ የኑሮ ቦታዎችን ያገናኛል፣ በተመረጠ ጥበብ እና ብጁ የመብራት ቅርጻ ቅርጾች ታጅቧል።",
     },
-    walkthroughUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    walkthroughUrl: "https://videos.pexels.com/video-files/6032338/6032338-uhd_2560_1440_30fps.mp4",
   },
   {
     id: "cmc-lounge",
@@ -171,7 +171,7 @@ export const projects = [
       en: "Modular partitions allow the space to transform for different occasions. Handcrafted elements and locally-sourced materials create authenticity that guests feel immediately.",
       am: "ሞጁላር ክፍልፋዮች ቦታው ለተለያዩ አጋጣሚዎች እንዲለወጥ ያስችላሉ። በእጅ የተሰሩ አባሎች እና በአካባቢ የተገኙ ቁሳቁሶች ደንበኞች ወዲያውኑ የሚሰማቸውን ትክክለኛነት ይፈጥራሉ።",
     },
-    walkthroughUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    walkthroughUrl: "https://videos.pexels.com/video-files/6032338/6032338-uhd_2560_1440_30fps.mp4",
   },
 ];
 

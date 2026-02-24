@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { useRef, useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { projects } from '../data/projects';
 import Gallery from '../components/Gallery';
@@ -7,10 +8,23 @@ import ScrollReveal from '../components/ScrollReveal';
 export default function ProjectDetailPage() {
     const { id } = useParams();
     const { lang, t } = useLanguage();
+    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
 
     const project = projects.find(p => p.id === id);
     const currentIndex = projects.findIndex(p => p.id === id);
     const nextProject = projects[(currentIndex + 1) % projects.length];
+
+    const togglePlay = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+        }
+    };
 
     if (!project) {
         return (
@@ -98,14 +112,33 @@ export default function ProjectDetailPage() {
                             <p className="text-gold text-sm tracking-widest uppercase mb-8 text-center">
                                 {t('projects_walkthrough')}
                             </p>
-                            <div className="aspect-video bg-black rounded-sm overflow-hidden shadow-2xl">
-                                <iframe
+                            <div
+                                className="relative aspect-video bg-black rounded-sm overflow-hidden shadow-2xl group cursor-pointer"
+                                onClick={togglePlay}
+                            >
+                                <video
+                                    ref={videoRef}
                                     src={project.walkthroughUrl}
-                                    title={`${project.title.en} walkthrough`}
-                                    className="w-full h-full"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
+                                    className="w-full h-full object-cover"
+                                    poster={project.heroImage}
+                                    playsInline
+                                    onPlay={() => setIsPlaying(true)}
+                                    onPause={() => setIsPlaying(false)}
+                                    loop
+                                    muted
                                 />
+
+                                {/* Premium Custom Play Button */}
+                                <div className={`absolute inset-0 bg-black/40 flex flex-col items-center justify-center transition-opacity duration-500 ${isPlaying ? 'opacity-0' : 'opacity-100'}`}>
+                                    <div className="w-20 h-20 rounded-full border border-white/50 text-white flex items-center justify-center backdrop-blur-sm group-hover:scale-110 group-hover:border-gold group-hover:bg-gold group-hover:text-black transition-all duration-500">
+                                        <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                    <p className="text-white text-sm tracking-widest uppercase mt-6 opacity-80 group-hover:opacity-100 group-hover:text-gold transition-colors duration-500">
+                                        Play Walkthrough
+                                    </p>
+                                </div>
                             </div>
                         </ScrollReveal>
                     </div>
