@@ -20,25 +20,25 @@ export default function ProjectCard({ project, index = 0 }) {
                 />
             </div>
 
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            {/* Background gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
 
-            {/* Content — always visible at bottom */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                <p className="text-gold text-xs tracking-widest uppercase mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            {/* Content — visible immediately on mobile, on hover for desktop */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500">
+                <p className="text-gold text-xs tracking-widest uppercase mb-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
                     {project.category === 'residential' ? '◆ Residential' : '◆ Corporate'} · {project.year}
                 </p>
-                <h3 className="font-serif text-xl md:text-2xl text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ transitionDelay: '100ms' }}>
+                <h3 className="font-serif text-xl md:text-2xl text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" style={{ transitionDelay: '100ms' }}>
                     {project.title[lang] || project.title.en}
                 </h3>
-                <p className="text-white/60 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ transitionDelay: '150ms' }}>
+                <p className="text-white/60 text-sm mt-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" style={{ transitionDelay: '150ms' }}>
                     {project.location[lang] || project.location.en}
                 </p>
             </div>
 
             {/* Corner accent */}
-            <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-gold/0 group-hover:border-gold transition-all duration-500" />
-            <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-gold/0 group-hover:border-gold transition-all duration-500" />
+            <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-gold border-opacity-100 md:border-opacity-0 md:group-hover:border-opacity-100 transition-all duration-500" />
+            <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-gold border-opacity-100 md:border-opacity-0 md:group-hover:border-opacity-100 transition-all duration-500" />
         </Link>
     );
 }
