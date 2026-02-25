@@ -11,7 +11,15 @@ export default function ContactPage() {
         e.preventDefault();
         // In production, this would send to a backend
         setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 4000);
+        // Modal will stay open until user closes it, or auto-close after a longer time
+        setTimeout(() => {
+            setSubmitted(false);
+            setFormData({ name: '', email: '', message: '' });
+        }, 5000);
+    };
+
+    const closeModal = () => {
+        setSubmitted(false);
         setFormData({ name: '', email: '', message: '' });
     };
 
@@ -86,15 +94,9 @@ export default function ContactPage() {
                                         className="group relative px-10 py-4 bg-black text-white text-sm tracking-widest uppercase overflow-hidden transition-all duration-500 hover:bg-gold mt-4"
                                     >
                                         <span className="relative z-10">
-                                            {submitted ? '✓' : t('contact_submit')}
+                                            {t('contact_submit')}
                                         </span>
                                     </button>
-
-                                    {submitted && (
-                                        <p className="text-gold animate-fade-in mt-2">
-                                            Message sent successfully! We'll respond within 24 hours.
-                                        </p>
-                                    )}
                                 </form>
                             </ScrollReveal>
                         </div>
@@ -112,8 +114,8 @@ export default function ContactPage() {
 
                                     <div>
                                         <p className="text-gold text-sm tracking-widest uppercase mb-2">{t('contact_email_label')}</p>
-                                        <a href="mailto:hello@mesob.design" className="text-lg hover:text-gold transition-colors">
-                                            hello@mesob.design
+                                        <a href="mailto:hello@misoso.design" className="text-lg hover:text-gold transition-colors">
+                                            hello@misoso.design
                                         </a>
                                     </div>
 
@@ -142,6 +144,40 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Success Modal */}
+            {submitted && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+                    <div className="bg-white p-8 md:p-12 max-w-md w-full text-center shadow-2xl relative animate-fade-up">
+                        <button
+                            onClick={closeModal}
+                            className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors"
+                        >
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+
+                        <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6 text-gold">
+                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+
+                        <h3 className="font-serif text-2xl md:text-3xl mb-4">Message Sent</h3>
+                        <p className="text-gray-600 mb-8">
+                            Thank you for reaching out. A member of our team will get back to you within 24 hours.
+                        </p>
+
+                        <button
+                            onClick={closeModal}
+                            className="w-full px-8 py-3 bg-black text-white text-sm tracking-widest uppercase hover:bg-gold transition-colors duration-300"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </main>
     );
 }

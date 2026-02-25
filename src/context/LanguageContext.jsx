@@ -5,12 +5,12 @@ const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
     const [lang, setLangState] = useState(() => {
-        return localStorage.getItem('mesob-lang') || 'en';
+        return localStorage.getItem('misoso-lang') || 'en';
     });
 
     const setLang = useCallback((newLang) => {
         setLangState(newLang);
-        localStorage.setItem('mesob-lang', newLang);
+        localStorage.setItem('misoso-lang', newLang);
         document.documentElement.lang = newLang === 'am' ? 'am' : 'en';
     }, []);
 

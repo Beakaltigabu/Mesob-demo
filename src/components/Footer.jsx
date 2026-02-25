@@ -39,7 +39,7 @@ export default function Footer() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
                     {/* Brand — full width on smallest screens */}
                     <div className="col-span-2 sm:col-span-2 md:col-span-1">
-                        <h3 className="font-serif text-2xl mb-2">MESOB</h3>
+                        <h3 className="font-serif text-2xl mb-2">MISOSO</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             {t('footer_tagline')}
                         </p>
@@ -47,12 +47,12 @@ export default function Footer() {
                         <div className="flex gap-3 mt-5">
                             {socials.map(s => (
                                 <a
-                                    key={s.label}
+                                    key={s.name}
                                     href={s.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-9 h-9 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:border-gold hover:text-gold transition-all duration-300"
-                                    aria-label={s.label}
+                                    aria-label={s.name}
                                 >
                                     <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">{s.icon}</svg>
                                 </a>
@@ -88,8 +88,8 @@ export default function Footer() {
                             <a href="tel:+2510985242978" className="block hover:text-white transition-colors">
                                 📞 098 524 2978
                             </a>
-                            <a href="mailto:hello@mesob.design" className="block hover:text-white transition-colors">
-                                ✉️ hello@mesob.design
+                            <a href="mailto:hello@misoso.design" className="block hover:text-white transition-colors">
+                                ✉️ hello@misoso.design
                             </a>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function Footer() {
                 {/* Bottom bar */}
                 <div className="mt-10 sm:mt-14 pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-3">
                     <p className="text-gray-500 text-xs">
-                        © {new Date().getFullYear()} Mesob. {t('footer_rights')}
+                        © {new Date().getFullYear()} Misoso. {t('footer_rights')}
                     </p>
                     <p className="text-gray-600 text-xs">
                         Powered by{' '}

@@ -48,7 +48,7 @@ export default function Navbar() {
                     <div className="flex items-center justify-between h-20">
                         {/* Logo */}
                         <Link to="/" className={`font-serif text-2xl tracking-wide transition-colors duration-300 ${textColor}`}>
-                            MESOB
+                            MISOSO
                         </Link>
 
                         {/* Desktop Nav */}
@@ -70,8 +70,8 @@ export default function Navbar() {
                             <button
                                 onClick={toggleLang}
                                 className={`text-xs tracking-wider uppercase border px-3 py-1.5 rounded-full transition-all duration-300 hover:bg-gold hover:text-white hover:border-gold ${scrolled || !isHome
-                                        ? 'border-black/20 text-black'
-                                        : 'border-white/40 text-white'
+                                    ? 'border-black/20 text-black'
+                                    : 'border-white/40 text-white'
                                     }`}
                             >
                                 {lang === 'en' ? 'አማ' : 'EN'}

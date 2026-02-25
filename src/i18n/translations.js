@@ -13,7 +13,7 @@ export const translations = {
     hero_cta: "Begin Your Project",
 
     // Intro
-    intro_text: "At Mesob, we believe that every space tells a story. Our designs weave together elegance, function, and soul — creating environments that inspire the way you live and work.",
+    intro_text: "At Misoso, we believe that every space tells a story. Our designs weave together elegance, function, and soul — creating environments that inspire the way you live and work.",
 
     // Projects
     projects_title: "Selected Works",
@@ -65,8 +65,8 @@ export const translations = {
     // About
     about_title: "Our Story",
     about_subtitle: "Crafting spaces with intention and soul",
-    about_text1: "Founded on the belief that great design transforms not just spaces, but the lives within them, Mesob has established itself as a distinctive voice in luxury interior design.",
-    about_text2: "Our name draws from a rich cultural heritage — the mesob, a handwoven centerpiece that brings people together around a shared table. This philosophy of communion, craftsmanship, and abundance is woven into everything we create.",
+    about_text1: "Founded on the belief that great design transforms not just spaces, but the lives within them, Misoso has established itself as a distinctive voice in luxury interior design.",
+    about_text2: "Our name draws from a rich cultural heritage — the misoso, the central pillar of a traditional Ethiopian home that provides strength, foundation, and support. This philosophy of structural integrity, grounding, and reliability is built into everything we create.",
     about_text3: "We are intentionally selective, taking on a limited number of projects each year to ensure that every space receives the depth of attention and creativity it deserves.",
     about_philosophy_title: "Our Philosophy",
     about_philosophy_text: "We believe luxury is not about excess — it's about intention. Every material, every line, every light source is chosen with purpose. The result is spaces that feel both extraordinary and deeply personal.",
@@ -105,7 +105,7 @@ export const translations = {
     hero_cta: "ፕሮጀክትዎን ይጀምሩ",
 
     // Intro
-    intro_text: "በመሶብ፣ እያንዳንዱ ቦታ ታሪክ ይናገራል ብለን እናምናለን። ዲዛይኖቻችን ውበት፣ ተግባር እና ነፍስን በማጣመር — የሚኖሩበትን እና የሚሰሩበትን መንገድ የሚያነሳሱ አካባቢዎችን ይፈጥራሉ።",
+    intro_text: "በሚሶሶ፣ እያንዳንዱ ቦታ ታሪክ ይናገራል ብለን እናምናለን። ዲዛይኖቻችን ውበት፣ ተግባር እና ነፍስን በማጣመር — የሚኖሩበትን እና የሚሰሩበትን መንገድ የሚያነሳሱ አካባቢዎችን ይፈጥራሉ።",
 
     // Projects
     projects_title: "የተመረጡ ስራዎች",
@@ -157,8 +157,8 @@ export const translations = {
     // About
     about_title: "ታሪካችን",
     about_subtitle: "ቦታዎችን በዓላማ እና በነፍስ መቅረጽ",
-    about_text1: "ታላቅ ዲዛይን ቦታዎችን ብቻ ሳይሆን በውስጣቸው ያሉትን ህይወቶችም ይለውጣል በሚለው እምነት ላይ የተመሰረተው መሶብ በቅንጦት ውስጠ-ገጽ ዲዛይን ውስጥ ልዩ ድምፅ ሆኖ ተመስርቷል።",
-    about_text2: "ስማችን ከበለፀገ ባህላዊ ቅርስ የተወሰደ ነው — መሶብ፣ ሰዎችን በጋራ ጠረጴዛ ዙሪያ የሚያገናኝ የእጅ ስራ ማዕከላዊ ክፍል። ይህ የኅብረት፣ የእጅ ጥበብ እና የብልጽግና ፍልስፍና በምንፈጥረው ሁሉ ውስጥ ተሸምኗል።",
+    about_text1: "ታላቅ ዲዛይን ቦታዎችን ብቻ ሳይሆን በውስጣቸው ያሉትን ህይወቶችም ይለውጣል በሚለው እምነት ላይ የተመሰረተው ሚሶሶ በቅንጦት ውስጠ-ገጽ ዲዛይን ውስጥ ልዩ ድምፅ ሆኖ ተመስርቷል።",
+    about_text2: "ስማችን ከበለፀገ ባህላዊ ቅርስ የተወሰደ ነው — ሚሶሶ፣ የኢትዮጵያ ባህላዊ ቤት ማዕከላዊ ምሰሶ ጥንካሬን፣ መሠረትን እና ድጋፍን የሚሰጥ። ይህ መዋቅራዊ ጥንካሬ፣ መረጋጋት እና አስተማማኝነት ፍልስፍና በምንፈጥረው ሁሉ ውስጥ ተገንብቷል።",
     about_text3: "ሆን ብለን መራጮች ነን፣ እያንዳንዱ ቦታ የሚገባውን ጥልቅ ትኩረት እና ፈጠራ ማግኘቱን ለማረጋገጥ በዓመት ውስን ቁጥር ያላቸውን ፕሮጀክቶች እንወስዳለን።",
     about_philosophy_title: "ፍልስፍናችን",
     about_philosophy_text: "ቅንጦት ከመጠን በላይ ስላለመሆኑ እናምናለን — ስለ ዓላማ ነው። እያንዳንዱ ቁሳቁስ፣ እያንዳንዱ መስመር፣ እያንዳንዱ የብርሃን ምንጭ በዓላማ ይመረጣል። ውጤቱ ልዩ እና ጥልቅ ግላዊ የሚሰማቸው ቦታዎች ናቸው።",

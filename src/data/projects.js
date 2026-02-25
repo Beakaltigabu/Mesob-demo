@@ -181,8 +181,8 @@ export const testimonials = [
     name: { en: "Sarah M.", am: "ሳራ ም." },
     role: { en: "Homeowner, Bole Atlas Penthouse", am: "የቤት ባለቤት፣ ቦሌ አትላስ ፔንትሀውስ" },
     text: {
-      en: "Mesob didn't just design our home — they understood how we wanted to feel in it. Every room tells our story. It's beyond what we imagined.",
-      am: "መሶብ ቤታችንን ብቻ አልዲዛይን አድርጉም — በውስጡ እንዴት መሰማት እንደምንፈልግ ተረዱ። እያንዳንዱ ክፍል ታሪካችንን ይናገራል። ከገመትነው ያለፈ ነው።",
+      en: "Misoso didn't just design our home — they understood how we wanted to feel in it. Every room tells our story. It's beyond what we imagined.",
+      am: "ሚሶሶ ቤታችንን ብቻ አልዲዛይን አድርጉም — በውስጡ እንዴት መሰማት እንደምንፈልግ ተረዱ። እያንዳንዱ ክፍል ታሪካችንን ይናገራል። ከገመትነው ያለፈ ነው።",
     },
   },
   {

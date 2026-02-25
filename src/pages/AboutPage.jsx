@@ -30,7 +30,7 @@ export default function AboutPage() {
                             <div className="relative">
                                 <img
                                     src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
-                                    alt="Mesob Interior Design"
+                                    alt="Misoso Interior Design"
                                     className="w-full aspect-[4/5] object-cover"
                                 />
                                 {/* Decorative frame */}
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Mesob-inspired decorative divider */}
+            {/* Misoso-inspired decorative divider */}
             <div className="flex justify-center py-8">
                 <div className="flex gap-2 items-center">
                     {[...Array(9)].map((_, i) => (
@@ -122,10 +122,10 @@ export default function AboutPage() {
                                         <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
                                 ),
-                                titleEn: 'Communion',
-                                titleAm: 'ኅብረት',
-                                descEn: 'Like the mesob that brings people together, our spaces are designed to connect, comfort, and inspire togetherness.',
-                                descAm: 'ሰዎችን አንድ ላይ እንደሚያመጣው መሶብ ቦታዎቻችን ለማገናኘት፣ ለማጽናናት እና ኅብረትን ለማነሳሳት የተነደፉ ናቸው።',
+                                titleEn: 'Foundation',
+                                titleAm: 'መሠረት',
+                                descEn: 'Like the misoso that supports the home, our designs are built to provide lasting strength, harmony, and grounding.',
+                                descAm: 'ቤትን እንደሚደግፈው ሚሶሶ፣ ዲዛይኖቻችን ዘላቂ ጥንካሬን፣ ስምምነትን እና መረጋጋትን ለመስጠት የተገነቡ ናቸው።',
                             },
                         ].map((value, i) => (
                             <ScrollReveal key={i} delay={i * 150}>
